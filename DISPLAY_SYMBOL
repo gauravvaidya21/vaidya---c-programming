@@ -1,0 +1,56 @@
+//HEADER.H
+#include<stdio.h>
+
+void Display(int);
+
+//HELPER.C
+#include "Header.h"
+
+///////////////////////////////////////////////////////////////////////////
+// Function Name:    Display
+// Return Value:     int
+// Input Parameters: int
+// Discription:      It prints * on screen at desire number of times 
+// Author Name:      Gaurav Vaidya
+// Date:             24 july 2020
+///////////////////////////////////////////////////////////////////////////
+
+
+void Display(int iNumber)
+{
+  int iCnt=0;
+
+  for(iCnt=1;iCnt<=iNumber;iCnt++)
+  {
+    printf("*\n");
+  }
+
+}
+
+
+//MAIN.C
+/*
+ problem statment:  accept number from user and print that much number of * on screen
+*/
+
+/*
+  Alorithm:
+	START
+            accept one number from user and store it into no1
+	    print * on screen as that much number of time
+	STOP
+*/
+
+#include "Header.h"
+
+int main()
+{
+  int iValue=0;
+
+  printf("enter the number");
+  scanf("%d",&iValue);
+
+  Display(iValue);
+
+  return 0;
+}
