@@ -1,0 +1,100 @@
+//HEADER.H
+#include<stdio.h>  // required for printf scanf
+
+void DisplayFactor(int);
+
+//HELPER.C
+#include"Header.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Function Name       :DisplayFactor
+// Input               :int
+// Output              :void
+// Discription         : it displyas even factors of number on screen.
+// Author Name         :Gaurav Kamlakar Vaidya
+// Date                :  2 Aug 2020
+//
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+void DisplayFactor(int iNo)
+{
+
+  if(iNo<0)
+  {
+    iNo=-iNo;   //input updator
+  }
+
+  int iCnt=0;
+
+  
+
+//      1     2        3
+  for(iCnt=1;iCnt<=iNo/2;iCnt++)
+  {
+ 
+     if(iNo%iCnt==0)
+    {
+
+      if(iCnt%2==0)
+      {
+        printf("%d\n",iCnt); //4
+      }
+    }
+  }
+
+
+}
+
+//MAIN.C
+/* 
+  problem statment: Accept number from user and print even factors of that number on screen.
+
+  Input:24         Output:1 2 4 6 8 12. 
+*/
+
+/*
+  Algorithm:
+	START
+		Accept no from user and store into variable No.
+		Create one counter as cnt and intialize to 1
+		
+		Iterate till the counter is less than or equal to the number no/2
+		
+		
+			display value of counter
+			check if counter%2==0
+				display counter
+
+			increment counter by one
+
+    		comlete procedure till counter is less or equal to  no/2	
+
+
+
+	END
+
+*/
+
+#include"Header.h"
+
+
+int main()
+{
+  
+  int iValue=0;
+
+  printf("enter the number");
+  scanf("%d",&iValue);
+
+
+  DisplayFactor(iValue);
+
+
+
+  return 0;
+
+}
