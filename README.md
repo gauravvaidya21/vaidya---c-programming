@@ -1,2 +1,2 @@
 # vaidya---c-programming
-
+THIS REPOSITORY HAVE BASIC C APPLICATONS .
