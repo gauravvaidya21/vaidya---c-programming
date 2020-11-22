@@ -1,0 +1,99 @@
+//HEADER.H
+#include<stdio.h>  // required for printf scanf
+
+
+ void PrintEven(int);
+ 
+ //HELPER.C
+ #include"Header.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Function Name       :PrintEven
+// Input               :int
+// Output              :void
+// Discription         : it displyas even number on screen as much of input number
+// Author Name         :Gaurav Kamlakar Vaidya
+// Date                :  2 Aug 2020
+//
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+void PrintEven(int iNo)
+{
+
+  if(iNo<=0)
+  {
+   return;
+  }
+
+  int iCnt=0;
+
+  
+
+//      1     2        3
+  for(iCnt=2;iCnt<=iNo*2;iCnt++)
+  {
+ 
+     if(iCnt%2==0)
+    {
+      printf("%d\n",iCnt); //4
+
+    }
+  }
+
+}
+
+
+//MAIN.C
+/* 
+  problem statment: Accept number from user and print that much even number on screen.
+
+  Input:7         Output:2 4 6 8 10 12 14 
+*/
+
+/*
+  Algorithm:
+	START
+		Accept no from user and store into variable No.
+		Create one counter as cnt and intialize to 2
+		
+		Iterate till the counter is less than or equal to the number no*2
+		
+		
+			display value of counter
+			increment counter by two
+
+    		comlete procedure till counter is less or equal to  no*2	
+
+
+
+	END
+
+*/
+
+#include"Header.h"
+
+
+int main()
+{
+  
+  int iValue=0;
+
+  printf("enter the number");
+  scanf("%d",&iValue);
+
+  PrintEven(iValue);
+
+  return 0;
+
+}
+ 
+
+
+
+  return 0;
+
+}
